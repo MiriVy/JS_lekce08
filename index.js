@@ -27,3 +27,14 @@ const strongPassword = (len) => {
 
   return result;
 };
+
+const createAccount = (user, generatePassword, weakPassword, strongPassword, mediumPassword ) => {
+  return `<p> Uživatel ${user} s heslem ${generatePassword} </p>`
+}
+
+document.body.innerHTML += `
+	<p>${createAccount('Míša', weakPassword(9))}</p>
+	<p>${createAccount('Řízek', mediumPassword(9))}</p>
+	<p>${createAccount('Mápodčepicí', strongPassword(9))}</p>
+`;
+
