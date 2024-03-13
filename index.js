@@ -28,7 +28,7 @@ const strongPassword = (len) => {
   return result;
 };
 
-const createAccount = (user, generatePassword, weakPassword, strongPassword, mediumPassword ) => {
+const createAccount = (user, generatePassword) => {
   return `<p> Uživatel ${user} s heslem ${generatePassword} </p>`
 }
 
